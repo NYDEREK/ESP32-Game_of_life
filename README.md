@@ -4,18 +4,18 @@
 
 🐱‍💻Work in Progres🐱‍💻
 
-# Modifiable rules
+# 🧨Modifiable rules🧨
 
-Neighbors_min       2   -minimal neighbors cout to survive
+🎈Neighbors_min       2   -minimal neighbors cout to survive
 
-Neighbors_max       3   -maximal neighbors cout to survive
+🎈Neighbors_max       3   -maximal neighbors cout to survive
 
-Neighbors_to_spawn  3   -count of neighbors to spawn new cell
+🎈Neighbors_to_spawn  3   -count of neighbors to spawn new cell
 
-Spawn_probability  50   -probability in[%] to spawn in first
+🎈Spawn_probability  50   -probability in[%] to spawn in first
                          iterration when cells are generated
                         
-Neighbors_range     1   -range of neighbors around 
+🎈Neighbors_range     1   -range of neighbors around 
 
                                                  N N N N N                                                 
                                                  N N N N N                                                 
@@ -24,7 +24,7 @@ Neighbors_range     1   -range of neighbors around
       N - neighbor       N N N <- range = 1      N N N N N <- range = 2
  
 
-Project use :
+# 🎉Project use :
 
 Adafruit GFX library for fonts -https://github.com/adafruit/Adafruit-GFX-Library
 
