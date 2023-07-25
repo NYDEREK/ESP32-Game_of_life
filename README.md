@@ -1,6 +1,7 @@
 # ESP-WROOM-32-38pin ST7789 240x240px Display
-"Game of life" with changable rules for experiments and fun :)
-Work in Progres
+✨"Game of life" with changable rules for experiments and fun ✨
+
+🐱‍💻Work in Progres🐱‍💻
 
 Project use :
 
