@@ -13,13 +13,16 @@
 //defines
 #define Alive    1
 #define Dead     0
-#define width  240//px
-#define height 240//px
+#define screen_width 240//pixels
+#define screen_height 240//pixels
+#define width 222//cells
+#define height 222//cells
 
-//rules
+//rules 
 #define neighbors_min      2 //minimal neighbors cout to survive 
 #define neighbors_max      3 //maximal neighbors cout to survive
-#define neighbors_to_spawn 3 //count of neighbors to spawn new pixel 
+#define neighbors_to_spawn 3 //count of neighbors to spawn new pixel
+#define Spawn_probability 50 //probability in[%] to spawn in first iterration 
 #define neighbors_range    1 //range of neighbors around | | | |
 //                                                  N N N N N
 //                                                  N N N N N
@@ -30,8 +33,11 @@
 //matrixes
 uint8_t Cur_Matrix[width + (2*neighbors_range)][height + (2*neighbors_range)];
 uint8_t New_Matrix[width + (2*neighbors_range)][height + (2*neighbors_range)];
-//int Matrix_Size = (width + (2 * neighbors_range)) * (height + (2 * neighbors_range));//Size in bytes
 // width times height times one byte equals size of Matrix
+
+//screen correction
+int Ver_scr_cor = ((screen_height - height) / 2);
+int Hor_scr_cor = ((screen_width - width) / 2);
 
 // Use hardware SPI
 TFT_eSPI tft = TFT_eSPI();
@@ -45,11 +51,29 @@ void setup() {
  //initialize Display
  display_init();
  display_intro();
+ //random number generating (randomness)
+ randomSeed(analogRead(0));
+ //Generate random matrix
+  for (int i = (height + neighbors_range); i >= neighbors_range;i--)
+ {
+   for (int j = neighbors_range; j <= (width + neighbors_range);j++)
+   {
+     uint8_t rng = (random(100) + 1);
+     if(rng <= Spawn_probability)
+     {
+       Cur_Matrix[j][i] = Alive;
+     }
+     else
+     {
+       Cur_Matrix[j][i] = Dead;
+     }
+   }
+ }
 }
 
 void loop() {
-  //check all cells
- for (int i = (height + neighbors_range); i <= neighbors_range;i--)
+ // check all cells
+ for (int i = (height + neighbors_range); i >= neighbors_range;i--)
  {
    for (int j = neighbors_range; j <= (width + neighbors_range);j++)
    {
@@ -70,9 +94,8 @@ void loop() {
      }
    }
  }
-
  //ReWrite New_Matrix to Cur_Matrix
- for (int i = ((height + (2 * neighbors_range)) - 1); i >= 0;i++)
+ for (int i = ((height + (2 * neighbors_range)) - 1); i >= 0;i--)
  {
    for (int j = 0; j <= ((width + (2 * neighbors_range))-1);j++)
    {
@@ -80,18 +103,18 @@ void loop() {
    }
  }
 
-//Display Cur_Matrix on screen
-for (int i = (height + neighbors_range); i <= neighbors_range;i--)
- {
+ // Display Cur_Matrix on screen
+ for (int i = (height + neighbors_range); i >= neighbors_range; i--)
+ {  
    for (int j = neighbors_range; j <= (width + neighbors_range);j++)
    {
     if(Cur_Matrix[j][i] ==Alive)
     {
-      tft.drawPixel(j, i, TFT_WHITE);
+      tft.drawPixel((j + Ver_scr_cor) , (i + Hor_scr_cor), TFT_WHITE);
     }
     else
     {
-      tft.drawPixel(j, i, TFT_BLACK);
+      tft.drawPixel((j + Ver_scr_cor) , (i + Hor_scr_cor), TFT_BLACK); 
     }
    }
  }
@@ -100,7 +123,7 @@ for (int i = (height + neighbors_range); i <= neighbors_range;i--)
 int Get_neighbors_count(int w, int h, int range)
 {
  int neighbors_count = 0;
- for (int i = (h + range); i <= (h - range); i--) // go down
+ for (int i = (h + range); i >= (h - range); i--) // go down
  {
    for (int j = (w - range); j <= (w + range); j++) //go right
    {
@@ -133,5 +156,6 @@ void display_intro(void)// intro to tests
   //tft.setFreeFont(FF5); 
   tft.setTextColor(TFT_GREENYELLOW);
   tft.println("     Starting ...");
-  delay(8500);
+  delay(3500);
+  tft.fillScreen(TFT_BLACK);
 }
