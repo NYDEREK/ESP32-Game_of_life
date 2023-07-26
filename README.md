@@ -28,7 +28,7 @@
 ![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/1c99afab-2b0f-48df-bd3a-a9858ddc9e62)
 
 🎓After restart new map is randomly generated ,cells are spawning Alive or Dead with probability of "Spawn_probability"
-which is equal to 14 for default settings.
+which is equal to 14% for default settings.
 
  
 
