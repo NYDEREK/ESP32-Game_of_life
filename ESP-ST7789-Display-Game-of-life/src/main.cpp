@@ -22,7 +22,7 @@
 #define neighbors_min      2 //minimal neighbors cout to survive 
 #define neighbors_max      3 //maximal neighbors cout to survive
 #define neighbors_to_spawn 3 //count of neighbors to spawn new pixel
-#define Spawn_probability 50 //probability in[%] to spawn in first iterration 
+#define Spawn_probability 14 //probability in[%] to spawn in first iterration 
 #define neighbors_range    1 //range of neighbors around | | | |
 //                                                  N N N N N
 //                                                  N N N N N
