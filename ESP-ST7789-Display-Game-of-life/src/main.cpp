@@ -19,12 +19,12 @@
 #define height 214//222//cells
 
 //rules 
-#define neighbors_min    33 //minimal neighbors cout to survive 
-#define neighbors_max     57 //maximal neighbors cout to survive
-#define neighbors_to_spawn_min 34 //count of neighbors to spawn new pixel
-#define neighbors_to_spawn_max 45 //count of neighbors to spawn new pixel
-#define Spawn_probability 40 //probability in[%] to spawn in first iterration 
-#define neighbors_range   5 //range of neighbors around | | | |
+#define neighbors_min    2 //minimal neighbors cout to survive 
+#define neighbors_max     3 //maximal neighbors cout to survive
+#define neighbors_to_spawn_min 3 //count of neighbors to spawn new pixel
+#define neighbors_to_spawn_max 3 //count of neighbors to spawn new pixel
+#define Spawn_probability 14 //probability in[%] to spawn in first iterration 
+#define neighbors_range   1 //range of neighbors around | | | |
 //                                                  N N N N N
 //                                                  N N N N N
 //                          N N N                   N N C N N      
@@ -36,8 +36,8 @@ uint8_t Cur_Matrix[width + (2*neighbors_range)][height + (2*neighbors_range)];
 uint8_t New_Matrix[width + (2*neighbors_range)][height + (2*neighbors_range)];
 
 // screen correction
-int Ver_scr_cor = ((screen_height - height) / 4);
-int Hor_scr_cor = ((screen_width - width) / 4);
+int Ver_scr_cor = ((screen_height - height) / 2);
+int Hor_scr_cor = ((screen_width - width) / 2);
 
 // Use hardware SPI
 TFT_eSPI tft = TFT_eSPI();
