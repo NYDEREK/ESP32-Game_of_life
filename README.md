@@ -7,6 +7,9 @@
 ✨Portable for many TFT displays such as ILI9341 ✨
 
 ✨Randomly generated maps so you are only changing rules ✨
+
+https://www.youtube.com/watch?v=prvvMwUMuO0 
+
 # Try other games and create your own
 💎Game of life : B3/S2-3
 
@@ -33,17 +36,6 @@
                             N N N                   N N C N N      
     C - cell                N C N                   N N N N N
     N - neighbor            N N N <- range = 1      N N N N N <- range = 2
-
-# Game of life
-![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/f109d69d-a465-422c-9dbd-13a7b7dfb315)
-
-
-# Larger than life
-![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/ae599df3-9dfc-4b95-80fb-5fdc2f0f240b)
-
-
-# Coral
-![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/a1374683-4dd0-47d6-b41f-f0da40a716bc)
 
 
 # 🎉Project use :
