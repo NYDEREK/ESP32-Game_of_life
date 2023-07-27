@@ -1,7 +1,12 @@
 # 🎮 ESP-WROOM-32-38pin ST7789 240x240px Display
 ![Game_of_life (1)](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/62064df6-f893-48e6-901c-dcfc5d456466)
 
-<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/NYDEREK/ESP32-Game_of_life">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/NYDEREK/ESP32-Game_of_life"> <img alt="Static Badge" src="https://img.shields.io/badge/uC-ESP32-red"> <img alt="Static Badge" src="https://img.shields.io/badge/Framework-Arduino-blue"> <img alt="Static Badge" src="https://img.shields.io/badge/VSCode-PlatformIO-orange">
+
+
+
+
+
 
 
 
