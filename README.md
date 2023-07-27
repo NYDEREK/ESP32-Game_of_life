@@ -43,11 +43,6 @@
 # Coral
 ![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/748415bb-0f56-4d24-927c-28c4554beb8b)
 
-
-
-
- 
-
 # 🎉Project use :
 
 Adafruit GFX library for fonts -https://github.com/adafruit/Adafruit-GFX-Library
