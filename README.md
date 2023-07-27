@@ -4,7 +4,10 @@
 
 
 
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/NYDEREK/ESP32-Game_of_life"> <img alt="Static Badge" src="https://img.shields.io/badge/uC-ESP32-red"> <img alt="Static Badge" src="https://img.shields.io/badge/Framework-Arduino-blue"> <img alt="Static Badge" src="https://img.shields.io/badge/VSCode-PlatformIO-orange">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/NYDEREK/ESP32-Game_of_life"> <img alt="Static Badge" src="https://img.shields.io/badge/uC-ESP32-red"> <img alt="Static Badge" src="https://img.shields.io/badge/Framework-Arduino-blue"> <img alt="Static Badge" src="https://img.shields.io/badge/VSCode-PlatformIO-orange"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/NYDEREK/ESP32-Game_of_life"> <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/NYDEREK/ESP32-Game_of_life">
+
+
+
 
 
 
