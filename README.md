@@ -18,7 +18,7 @@
 
 
 ## Features
-* Easy rules modifying 
+* Easy rule modification
 
 * Portable for many TFT displays such as ILI9341 
 
