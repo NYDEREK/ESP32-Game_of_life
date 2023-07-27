@@ -34,14 +34,15 @@
 * Larger than life: R5/B34-45/S33-57
 
 ## Example settings for "Larger than life"
+
+```bash
 * neighbors_min     33 - minimal neighbors cout to survive 
 * neighbors_max     57 - maximal neighbors cout to survive
 * neighbors_to_spawn_min 34 - count of neighbors to spawn new pixel
 * neighbors_to_spawn_max 45 - count of neighbors to spawn new pixel
 * Spawn_probability 40 - probability in[%] to spawn in first iterration 
 * neighbors_range   5 - range of neighbors around
-  
-```bash
+
 N - neighbor                         N N N N N
 C - cell                             N N N N N
              N N N                   N N C N N
