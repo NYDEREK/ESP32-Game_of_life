@@ -15,15 +15,16 @@
 #define Dead     0
 #define screen_width 240//pixels
 #define screen_height 240//pixels
-#define width 222//cells
-#define height 222//cells
+#define width 214//222//cells
+#define height 214//222//cells
 
 //rules 
-#define neighbors_min      2 //minimal neighbors cout to survive 
-#define neighbors_max      3 //maximal neighbors cout to survive
-#define neighbors_to_spawn 3 //count of neighbors to spawn new pixel
+#define neighbors_min     2 //minimal neighbors cout to survive 
+#define neighbors_max     3 //maximal neighbors cout to survive
+#define neighbors_to_spawn_min 3 //count of neighbors to spawn new pixel
+#define neighbors_to_spawn_max 3 //count of neighbors to spawn new pixel
 #define Spawn_probability 14 //probability in[%] to spawn in first iterration 
-#define neighbors_range    1 //range of neighbors around | | | |
+#define neighbors_range   1 //range of neighbors around | | | |
 //                                                  N N N N N
 //                                                  N N N N N
 //                          N N N                   N N C N N      
@@ -33,7 +34,7 @@
 //matrixes
 uint8_t Cur_Matrix[width + (2*neighbors_range)][height + (2*neighbors_range)];
 uint8_t New_Matrix[width + (2*neighbors_range)][height + (2*neighbors_range)];
-// width times height times one byte equals size of Matrix
+
 
 //screen correction
 int Ver_scr_cor = ((screen_height - height) / 2);
@@ -80,7 +81,7 @@ void loop() {
     //get neighbors count
      int nei_count = Get_neighbors_count(j, i, neighbors_range);// better generate it one time insted of 3 times in every "if"
      //check game rules and modify new matrix
-     if ((Cur_Matrix[j][i] == Dead) && (nei_count == neighbors_to_spawn))
+     if ((Cur_Matrix[j][i] == Dead) &&  (nei_count >= neighbors_to_spawn_min) && (nei_count <= neighbors_to_spawn_max))
      {
        New_Matrix[j][i] = Alive; // if cell is death and has enough neighbors then this cell is getting alive
      } 
