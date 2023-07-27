@@ -39,10 +39,12 @@
 
 
 # Larger than life
-![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/25b4fb0e-5f50-47d5-b6a9-237a51bfce43)
+![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/ae599df3-9dfc-4b95-80fb-5fdc2f0f240b)
+
 
 # Coral
-![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/748415bb-0f56-4d24-927c-28c4554beb8b)
+![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/a1374683-4dd0-47d6-b41f-f0da40a716bc)
+
 
 # 🎉Project use :
 
