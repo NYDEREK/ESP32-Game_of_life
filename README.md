@@ -1,4 +1,6 @@
-# ESP-WROOM-32-38pin ST7789 240x240px Display
+# 🎮 ESP-WROOM-32-38pin ST7789 240x240px Display
+![Game_of_life (1)](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/62064df6-f893-48e6-901c-dcfc5d456466)
+
 
 * "Game of life" with changable rules for experiments and fun 
 
