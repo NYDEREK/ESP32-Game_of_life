@@ -8,6 +8,12 @@
 
 * Randomly generated maps so you are only changing rules
 
+[![Watch the video](https://img.youtube.com/vi/https://www.youtube.com/watch?v=prvvMwUMuO0/hqdefault.jpg)](https://www.youtube.com/embed/https://www.youtube.com/watch?v=prvvMwUMuO0)
+
+[<img src="https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/https://www.youtube.com/watch?v=prvvMwUMuO0)
+
+
 https://www.youtube.com/watch?v=prvvMwUMuO0 
 
 ## Try other games and create your own
