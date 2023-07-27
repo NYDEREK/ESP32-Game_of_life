@@ -12,9 +12,9 @@
 [![Watch the video](https://img.youtube.com/vi/prvvMwUMuO0/hqdefault.jpg)](https://www.youtube.com/watch?v=prvvMwUMuO0)
 
 ## Try other games and create your own
-* Game of life : B3/S2-3
+* Game of life : R1/B3/S2-3
 
-* Coral: B3/S45678
+* Coral: R1/B3/S45678
 
 * Larger than life: R5/B34-45/S33-57
 
