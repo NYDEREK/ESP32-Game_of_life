@@ -2,33 +2,39 @@
 
 ✨"Game of life" with changable rules for experiments and fun ✨
 
-🐱‍💻Work in Progres🐱‍💻
+✨Easy rules modifying ✨
 
-# 🧨Modifiable rules🧨
+✨Portable for many TFT displays such as ILI9341 ✨
 
-🎈Neighbors_min       2   -minimal neighbors cout to survive
+✨Randomly generated maps so you are only changing rules ✨
+# Try other games and create your own
+💎Game of life : B3/S2-3
 
-🎈Neighbors_max       3   -maximal neighbors cout to survive
+💎Coral: B3/S45678
 
-🎈Neighbors_to_spawn  3   -count of neighbors to spawn new cell
+💎Larger than life: R5/B34-45/S33-57
 
-🎈Spawn_probability  14   -probability in[%] to spawn in first
-                         iterration when cells are generated
-                        
-🎈Neighbors_range     1   -range of neighbors around 
+# Example settings for "Larger than life"
 
-                                                 N N N N N                                                 
-                                                 N N N N N                                                 
-                         N N N                   N N C N N                         
-      C - cell           N C N                   N N N N N
-      N - neighbor       N N N <- range = 1      N N N N N <- range = 2
+ neighbors_min     2 //minimal neighbors cout to survive 
+ 
+ neighbors_max     3 //maximal neighbors cout to survive
+ 
+ neighbors_to_spawn_min 3 //count of neighbors to spawn new pixel
+ 
+ neighbors_to_spawn_max 3 //count of neighbors to spawn new pixel
+ 
+ Spawn_probability 14 //probability in[%] to spawn in first iterration 
+ 
+ neighbors_range   1 //range of neighbors around | | | |
+ 
+                                                    N N N N N
+                                                    N N N N N
+                            N N N                   N N C N N      
+    C - cell                N C N                   N N N N N
+    N - neighbor            N N N <- range = 1      N N N N N <- range = 2
 
-# 🎁Randomly generated map🎁
 
-![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/1c99afab-2b0f-48df-bd3a-a9858ddc9e62)
-
-🎓After restart new map is randomly generated ,cells are spawning Alive or Dead with probability of "Spawn_probability"
-which is equal to 14% for default settings.
 
  
 
