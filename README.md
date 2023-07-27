@@ -35,7 +35,8 @@
     N - neighbor            N N N <- range = 1      N N N N N <- range = 2
 
 # Game of life
-![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/a96cffdd-64bf-43c7-a367-8afd74261e41)
+![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/f109d69d-a465-422c-9dbd-13a7b7dfb315)
+
 
 # Larger than life
 ![image](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/25b4fb0e-5f50-47d5-b6a9-237a51bfce43)
