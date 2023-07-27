@@ -15,8 +15,6 @@
 
 
 ## Features
-* "Game of life" with changable rules for experiments and fun 
-
 * Easy rules modifying 
 
 * Portable for many TFT displays such as ILI9341 
