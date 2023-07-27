@@ -9,10 +9,7 @@
 * Randomly generated maps so you are only changing rules
 
 ## Video
-[![Watch the video](https://img.youtube.com/vi/prvvMwUMuO0/hqdefault.jpg)](https://www.youtube.com/embed/prvvMwUMuO0)
-
-[<img src="https://img.youtube.com/vi/prvvMwUMuO0/hqdefault.jpg" width="400" height="300"
-/>](https://www.youtube.com/embed/prvvMwUMuO0)
+[![Watch the video](https://img.youtube.com/vi/prvvMwUMuO0/hqdefault.jpg)](https://www.youtube.com/watch?v=prvvMwUMuO0)
 
 ## Try other games and create your own
 * Game of life : B3/S2-3
