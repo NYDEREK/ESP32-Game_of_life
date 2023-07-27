@@ -16,17 +16,17 @@
 
 # Example settings for "Larger than life"
 
- neighbors_min     2 //minimal neighbors cout to survive 
+ neighbors_min     33 - minimal neighbors cout to survive 
  
- neighbors_max     3 //maximal neighbors cout to survive
+ neighbors_max     57 - maximal neighbors cout to survive
  
- neighbors_to_spawn_min 3 //count of neighbors to spawn new pixel
+ neighbors_to_spawn_min 34 - count of neighbors to spawn new pixel
  
- neighbors_to_spawn_max 3 //count of neighbors to spawn new pixel
+ neighbors_to_spawn_max 45 - count of neighbors to spawn new pixel
  
- Spawn_probability 14 //probability in[%] to spawn in first iterration 
+ Spawn_probability 40 - probability in[%] to spawn in first iterration 
  
- neighbors_range   1 //range of neighbors around | | | |
+ neighbors_range   5 - range of neighbors around | | | |
  
                                                     N N N N N
                                                     N N N N N
