@@ -6,7 +6,10 @@
 
 * Portable for many TFT displays such as ILI9341 
 
-* Randomly generated maps so you are only changing rules 
+* Randomly generated maps so you are only changing rules
+* 
+ [<img src="https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/<https://www.youtube.com/watch?v=prvvMwUMuO0 >)
 
 https://www.youtube.com/watch?v=prvvMwUMuO0 
 
