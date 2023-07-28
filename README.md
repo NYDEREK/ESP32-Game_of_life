@@ -65,6 +65,7 @@ Here put your display function to draw a pixel .In display_pixel_Dead color shou
 
 ### Random Number Generation
 For creating random map you need to define your uC RNG function .Function have to return random number form 0 to 99
+
 ![carbon (5)](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/a86557e1-99a4-469f-8390-4b19d6080d95)
 
 ## Project use :
