@@ -22,11 +22,9 @@
 
 ## Try other games and create your own
 * Game of life : R1/B3/S2-3
-
+* Blob life: R4/B24-33/S10-33
 * Coral: R1/B3/S45678
-
 * Larger than life: R5/B34-45/S33-57
-
 ## Example settings for "Larger than life"
 
 ```bash
