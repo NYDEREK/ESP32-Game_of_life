@@ -54,6 +54,10 @@ C - cell                             N N N N N
 If you want to display "Game of life" on other display or use diffrent uC you have to change those functions for yours
 ![carbon](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/a8f0bf38-88a0-4ec4-b8bf-d838ab717cb4)
 
+And change those defines to fit your hardware
+
+![carbon (6)](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/2d8a2de1-e738-4a32-8390-82a3362381a2)
+
 examples below--->
 ### Display init
 ![carbon (1)](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/6f7c78db-f85b-4eb5-8fa5-2fd0d0df21b8)
