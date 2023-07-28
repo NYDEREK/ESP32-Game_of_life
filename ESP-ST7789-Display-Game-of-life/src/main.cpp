@@ -19,12 +19,12 @@
 #define height 214//222//cells
 
 //rules 
-#define neighbors_min    2 //minimal neighbors cout to survive 
-#define neighbors_max     3 //maximal neighbors cout to survive
-#define neighbors_to_spawn_min 3 //count of neighbors to spawn new pixel
-#define neighbors_to_spawn_max 3 //count of neighbors to spawn new pixel
-#define Spawn_probability 14 //probability in[%] to spawn in first iterration 
-#define neighbors_range   1 //range of neighbors around | | | |
+#define neighbors_min    33 //minimal neighbors cout to survive 
+#define neighbors_max     57 //maximal neighbors cout to survive
+#define neighbors_to_spawn_min 34 //count of neighbors to spawn new pixel
+#define neighbors_to_spawn_max 45 //count of neighbors to spawn new pixel
+#define Spawn_probability 40 //probability in[%] to spawn in first iterration 
+#define neighbors_range   5 //range of neighbors around | | | |
 //                                                  N N N N N
 //                                                  N N N N N
 //                          N N N                   N N C N N      
@@ -44,8 +44,14 @@ TFT_eSPI tft = TFT_eSPI();
 
 //functions
 int Get_neighbors_count(int w, int h, int range);//returns how many neighbors cell has
-void display_init(void);//initialize display
-void display_intro(void);
+
+
+//porting functions
+void display_init(void);//initialize your display
+void display_intro(void);//your intro 
+void display_pixel_Alive(int w, int h);// your functions for displaying 
+void display_pixel_Dead(int w, int h);// alive and dead pixels
+int get_rand_numb(int max); //your function for RNG
 
 void setup() {
  //initialize Display
@@ -58,7 +64,7 @@ void setup() {
  {
    for (int j = neighbors_range; j <= (width + neighbors_range);j++)
    {
-     uint8_t rng = (random(100) + 1);
+     uint8_t rng = (get_rand_numb(100) + 1);
      if(rng <= Spawn_probability)
      {
        Cur_Matrix[j][i] = Alive;
@@ -111,11 +117,13 @@ void loop() {
    {
     if(Cur_Matrix[j][i] ==Alive)
     {
-      tft.drawPixel((j + Ver_scr_cor) , (i + Hor_scr_cor), TFT_WHITE);
+      //tft.drawPixel((j + Ver_scr_cor) , (i + Hor_scr_cor), TFT_WHITE);
+       display_pixel_Alive((j + Ver_scr_cor), (i + Hor_scr_cor));
     }
     else
     {
-      tft.drawPixel((j + Ver_scr_cor) , (i + Hor_scr_cor), TFT_BLACK); 
+      //tft.drawPixel((j + Ver_scr_cor) , (i + Hor_scr_cor), TFT_BLACK); 
+      display_pixel_Dead((j + Ver_scr_cor), (i + Hor_scr_cor));
     }
    }
  }
@@ -143,8 +151,8 @@ int Get_neighbors_count(int w, int h, int range)
 void display_init(void)//initializing Display
 {
   tft.init();
-  tft.setRotation(4);
-  tft.fillScreen(TFT_BLACK); 
+  tft.setRotation(4); //Screen rotation 
+  tft.fillScreen(TFT_BLACK); //Bg color 
 }
 void display_intro(void)// intro to tests
 {
@@ -160,3 +168,20 @@ void display_intro(void)// intro to tests
   delay(3500);
   tft.fillScreen(TFT_BLACK);
 }
+void display_pixel_Alive(int w, int h)
+{
+  tft.drawPixel(w, h,TFT_WHITE);
+}
+
+void display_pixel_Dead(int w, int h)
+{
+  tft.drawPixel(w, h,TFT_BLACK);
+}
+
+int get_rand_numb(int max)
+{
+  int rand_num;
+  rand_num = random(max);
+  return rand_num;
+}
+
