@@ -50,7 +50,22 @@ C - cell                             N N N N N
              N C N                   N N N N N
              N N N <- range = 1      N N N N N <- range = 2
 ```
+# Porting 
+If you want to display "Game of life" on other display or use diffrent uC you have to change those functions for yours
+![carbon](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/a8f0bf38-88a0-4ec4-b8bf-d838ab717cb4)
 
+examples below--->
+### Display init
+![carbon (1)](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/6f7c78db-f85b-4eb5-8fa5-2fd0d0df21b8)
+### Intro 
+![carbon (2)](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/42e3cc2b-bdec-417e-9615-7c051572fb89)
+### Display pixel
+Here put your display function to draw a pixel .In display_pixel_Dead color should be color of your background
+![carbon (3)](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/13cc97bb-c013-408d-9f5f-130cd1c9816d)
+
+### Random Number Generation
+For creating random map you need to define your uC RNG function .Function have to return random number form 0 to 99
+![carbon (5)](https://github.com/NYDEREK/ESP32-Game_of_life/assets/112076828/a86557e1-99a4-469f-8390-4b19d6080d95)
 
 ## Project use :
 * Adafruit GFX library for fonts -https://github.com/adafruit/Adafruit-GFX-Library
