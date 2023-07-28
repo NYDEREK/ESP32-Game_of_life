@@ -8,14 +8,7 @@
 
 
 
-
-
-
-
-
-
-
-
+###  Game of Life simulator with variable rules and random map generation
 
 ## Features
 * Easy rule modification
